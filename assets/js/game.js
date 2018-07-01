@@ -72,7 +72,7 @@ $(document).ready(function(){
 			}else{
 				alert("There are no more game words! Press CTR + R to restart the game!");
 				window.removeEventListener('keydown', keyDownHandler)
-				$("#final").html(`<p>Wins: ${game.wins}</p><p>Fails: ${game.fails}</p><p>Guesses: ${game.totalGuessed}</p><p>Guessed letters: ${game.totalGuessed}</p><p>Guessed words: ${JSON.stringify(game.guessedWords)}</p><p>All game words: ${JSON.stringify(game.oldWords)}</p>`).fadeIn("slow");
+				$("#final").html(`<p>Wins: ${game.wins}</p><p>Fails: ${game.fails}</p><p>Guesses: ${game.totalGuesses}</p><p>Guessed letters: ${game.totalGuessed}</p><p>Guessed words: ${JSON.stringify(game.guessedWords)}</p><p>All game words: ${JSON.stringify(game.oldWords)}</p>`).fadeIn("slow");
 			}
 		},
 	};
